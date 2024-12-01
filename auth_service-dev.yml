@@ -6,22 +6,16 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 
 server:
-  port: 8300
+  port: 8000
 
 spring:
   application:
-    name: group-service
-  data:
-    mongodb:
-      database: group_service
-#      uri: mongodb+srv://admin:admin@java-cluster.dydtuf8.mongodb.net/
-      uri: mongodb://localhost:27017/
-
-springdoc:
-  packages-to-scan:
-    com.trvankiet.app
-  api-docs:
-    path: /v3/api-docs/group-service
+    name: auth-service
+#springdoc:
+#  packages-to-scan:
+#    com.trvankiet.app
+#  api-docs:
+#    path: /v3/api-docs/group-service
     
 #management:
 #  tracing:
