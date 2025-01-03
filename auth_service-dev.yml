@@ -16,15 +16,15 @@ spring:
       client:
         registration:
           google:
-            client-id: 856132508450-eap1r2defedlscc26mkoiqj21v0dshh4.apps.googleusercontent.com
-            client-secret: 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
+            client-id: ${GOOGLE_CLIENT_ID}
+            client-secret: ${GOOGLE_CLIENT_SECRET}
           facebook:
-            client-id: 917355857043361
-            client-secret: 1322284ce9097c89e9597e807f5fbb54
+            client-id: ${FACEBOOK_CLIENT_ID}
+            client-secret: ${FACEBOOK_CLIENT_SECRET}
   datasource:
     url: jdbc:postgresql://localhost:5432/cinemazone
-    username: admin
-    password: admin123
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
     driver-class-name: org.postgresql.Driver
 
   jpa:
